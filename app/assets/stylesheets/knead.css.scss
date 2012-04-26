@@ -1,0 +1,123 @@
+$fontFamily: Helvetica, Arial, sans-serif;
+
+#knead-widget {
+  a {
+    background: #f3f3f3;
+    border: 1px solid #ddd;
+    bottom: -5px;
+    color: #666;
+    display: block;
+    font-family: $fontFamily;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    margin: 0;
+    outline: 0;
+    padding: 5px 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    right: 20px;
+    text-decoration: none;
+
+    transition: all 0.15s ease-in-out 0s;
+    -moz-transition: all 0.15s ease-in-out 0s;
+    -webkit-transition: all 0.15s ease-in-out 0s;
+
+    &:hover {
+      background: #438AFF;
+      border-color: #438AFF;
+      bottom: 0;
+      color: #fff;
+    }
+  }
+}
+
+#knead-modal {
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  height: 320px;
+  left: 50%;
+  margin: 0 0 0 -250px;
+  padding: 20px;
+  position: fixed;
+  top: 15%;
+  width: 500px;
+  z-index: 999;
+
+  -webkit-box-shadow: 0px 0px 2px 4px rgba(224, 224, 224, 0.6);
+  -moz-box-shadow: 0px 0px 2px 4px rgba(224, 224, 224, 0.6);
+  box-shadow: 0px 0px 2px 4px rgba(224, 224, 224, 0.6);
+
+  h6 {
+    border: 0;
+    color: #333;
+    font-size: 16px;
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+  }
+
+  dl.knead-modal-form {
+    margin: 0;
+    padding: 0;
+
+    dt {
+      margin: 0;
+      padding: 0;
+    }
+
+    dd {
+      margin: 0 0 10px 0;
+      padding: 0;
+    }
+  }
+
+  input.knead-input, textarea.knead-input {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    color: #333;
+    font-family: $fontFamily;
+    font-size: 14px;
+    margin: 0;
+    padding: 7px;
+    width: 400px;
+
+    -moz-transition: none;
+    -webkit-transition: none;
+    transition: none;
+
+    &:focus {
+      border: 2px solid #438AFF;
+      padding: 6px;
+    }
+  }
+
+  p.knead-modal-submit {
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-family: $fontFamily;
+    font-size: 14px;
+    margin: 20px 0 0 0;
+    padding: 20px 0 0 0;
+
+    input#knead-submit-bug {
+      background: #438AFF;
+      border-radius: 4px;
+      border: 0;
+      color: #fff;
+      font-family: $fontFamily;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 6px 10px;
+      margin: 0 5px 0 0;
+    }
+
+    a#knead-cancel-link {
+      margin-left: 5px;
+      padding: 6px 0;
+    }
+  }
+}

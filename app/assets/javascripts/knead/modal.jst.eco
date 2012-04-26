@@ -1,0 +1,17 @@
+<h6>Submit Feedback</h6>
+
+<form method="post">
+  <dl class="knead-modal-form">
+    <dt><label for="knead-bug-message">Message</label></dt>
+    <dd><textarea class="knead-input" id="knead-bug-message" cols="60" rows="4" name="bug[message]" /></dd>
+
+    <dt><label for="knead-bug-name">Your name</label></dt>
+    <dd><input type="text" id="knead-bug-name" class="knead-input" size="40" maxlength="150" name="bug[name]" value="<%= @name %>" /></dd>
+  </dl>
+
+  <p class="knead-modal-submit">
+    <input type="submit" value="Submit" id="knead-submit-bug" />
+    or
+    <a href="#" id="knead-cancel-link">Cancel</a>
+  </p>
+</form>
