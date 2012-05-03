@@ -1,6 +1,8 @@
 # Knead
 
-A Gem used to provide basic bug logging capability to a Rails app. This Gem only handles the capture of the bug information. Display and modification of the data happens elsewhere.
+A Gem used to provide basic bug logging capability to a Rails app. All bugs are stored in Redis. This Gem only handles the capture of the bug information. Display and modification of the data happens elsewhere.
+
+A client to read the bugs is coming soon..
 
 ## Setup
 
@@ -33,3 +35,7 @@ If you want to log the current user from within your app, include the helper `kn
    <%= knead_user %>
 
 This will generate a JSON representation of the current user's name and id. (Assumes there is an object named `current_user` that responds to `:id` and `:name`. If not present, this is ignored.
+
+## License
+
+Knead is released under the [MIT license](http://www.opensource.org/licenses/MIT)
